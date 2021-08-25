@@ -55,9 +55,9 @@ def create():
     os.system(f'bash {FILE}')
 
 
-@cli.command(help='run gitsync')
-def gitsync():
-    FILE = join(ROOT, 'scripts', 'gitsync.sh')
+@cli.command(help='git pull to remote')
+def gitpull():
+    FILE = join(ROOT, 'scripts', 'gitpull.sh')
     os.system(f'bash {FILE}')
 
 
