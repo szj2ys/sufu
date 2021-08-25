@@ -43,18 +43,60 @@ def version():
     print(package_conf['__version__'])
 
 
-@cli.command(help='run test')
-def test():
-    FILE = join(ROOT, 'scripts', 'test.sh')
+@cli.command(help='run clean')
+def clean():
+    FILE = join(ROOT, 'scripts', 'clean.sh')
     os.system(f'bash {FILE}')
 
 
+@cli.command(help='run create')
+def create():
+    FILE = join(ROOT, 'scripts', 'create.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run gitsync')
+def gitsync():
+    FILE = join(ROOT, 'scripts', 'gitsync.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run delete')
+def delete():
+    FILE = join(ROOT, 'scripts', 'delete.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run install')
+def install():
+    FILE = join(ROOT, 'scripts', 'install.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run publish')
+def publish():
+    FILE = join(ROOT, 'scripts', 'publish.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run requirements')
+def require():
+    FILE = join(ROOT, 'scripts', 'requirements.sh')
+    os.system(f'bash {FILE}')
+
+
+@cli.command(help='run python script')
 def run():
+    FILE = join(ROOT, 'scripts', 'run.sh')
+    os.system(f'bash {FILE}')
+
+
+def execute():
     try:
-        cli(prog_name='do')
+        cli(prog_name='sufu')
     except Exception as e:
         pass
 
 
 if __name__ == "__main__":
-    run()
+    execute()

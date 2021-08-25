@@ -87,7 +87,7 @@ setup(
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "sufu=sufu.cli:run",
+            "sufu=sufu.cli:execute",
         ],
     },
     license="MIT",  # BSD

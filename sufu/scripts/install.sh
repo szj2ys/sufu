@@ -12,5 +12,5 @@ yapf -irp .
 pip install -y ${PACKAGE}
 python3 setup.py install
 
-bash scripts/clean.sh
+
 
