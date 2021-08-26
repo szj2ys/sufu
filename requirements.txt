@@ -1,4 +1,7 @@
+jupyter
 environs
 click
 click_help_colors
 yapf
+autoflake
+twine

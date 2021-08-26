@@ -39,7 +39,7 @@ swap_seconds () {
 start=$(date +%s)
 
 # execute python script
-${PIPENV} run python ${ABS_PYTHON_SCRIPT} >>${LOG_FILE} 2>&1 &
+${PIPENV} run python3 ${ABS_PYTHON_SCRIPT} >>${LOG_FILE} 2>&1 &
 
 # wait task finished
 wait
