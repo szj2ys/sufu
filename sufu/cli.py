@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 # *_*coding:utf-8 *_*
 import os
 from pathlib import Path
