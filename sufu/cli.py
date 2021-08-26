@@ -1,3 +1,5 @@
+#/usr/bin/python3
+# *_*coding:utf-8 *_*
 import os
 from pathlib import Path
 from os.path import dirname, abspath, join
