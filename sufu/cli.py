@@ -63,6 +63,12 @@ def gitpull():
     os.system(f'bash {FILE}')
 
 
+@cli.command(help='deploy hexo blog')
+def hexod():
+    FILE = join(ROOT, 'scripts', 'deploy.sh')
+    os.system(f'bash {FILE}')
+
+
 @cli.command(help='run delete')
 def delete():
     FILE = join(ROOT, 'scripts', 'delete.sh')
