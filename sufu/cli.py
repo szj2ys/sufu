@@ -58,7 +58,7 @@ def create():
 
 
 @cli.command(help='git pull to remote')
-def gitpull():
+def gitp():
     FILE = join(ROOT, 'scripts', 'gitpull.sh')
     os.system(f'bash {FILE}')
 
