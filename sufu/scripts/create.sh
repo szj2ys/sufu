@@ -32,7 +32,7 @@ esac
 # create virtual environment, default python version is 3.7
 read -p "请输入Python版本: " input
 if [ ! -n "$input" ] ;then
-    pipenv --python 3.7
+    pipenv --python `which python3`
 else
     pipenv --python ${input}
 fi

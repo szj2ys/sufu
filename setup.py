@@ -6,6 +6,9 @@ import sys
 from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
+if sys.platform.startswith('win'):
+    sys.exit('Ops, this package is only work on linux system...')
+
 
 def read_file(filename):
     with open(filename) as fp:

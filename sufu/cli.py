@@ -63,6 +63,11 @@ def gitp():
     os.system(f'bash {FILE}')
 
 
+@cli.command(help='git rm all cache files')
+def gitrmc():
+    os.system('git rm -r --cache .')
+
+
 @cli.command(help='deploy hexo blog')
 def hexod():
     FILE = join(ROOT, 'scripts', 'deploy.sh')
