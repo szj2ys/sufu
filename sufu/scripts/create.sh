@@ -9,7 +9,7 @@ PROJECT_DIR=`pwd`
 cd ${PROJECT_DIR}
 
 ENVNAME=$(basename $PROJECT_DIR)
-echo "Virtual environment [01;31m $ENVNAME[ will be create"
+echo "Virtual environment [01;31m$ENVNAME[0m will be create"
 
 read -r -p "Are You Sure? [Y/n] " input
 
