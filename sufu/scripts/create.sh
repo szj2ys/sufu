@@ -42,7 +42,21 @@ PREFIX="${PIPENV}/bin/"
 PIP="${PIPENV}/bin/pip"
 
 # 将环境配置到jupyter notebook中
-python3 -m ipykernel install --user --name=${ENVNAME}
+read -r -p "将环境配置到jupyter notebook中? [Y/n] " input
+
+case $input in
+    [yY][eE][sS]|[yY])
+    python3 -m ipykernel install --user --name=${ENVNAME}
+    ;;
+
+    [nN][oO]|[nN])
+    echo "No"
+    ;;
+
+    *)
+    echo "No"
+    ;;
+esac
 
 ## look over existing kernels
 #${PREFIX}jupyter kernelspec list
