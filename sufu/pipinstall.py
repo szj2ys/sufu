@@ -7,5 +7,9 @@ def install_package(pkg):
     os.system(f'pip3 install {pkg} -i https://mirrors.aliyun.com/pypi/simple')
 
 
-if __name__ == '__main__':
+def main():
     fire.Fire(install_package)
+
+
+if __name__ == '__main__':
+    main()
