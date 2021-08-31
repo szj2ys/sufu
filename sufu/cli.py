@@ -205,12 +205,6 @@ def delete():
     os.system(f'bash {FILE}')
 
 
-@cli.command(help='install python package like this: sufu pipi pkg')
-def pipi():
-    FILE = join(ROOT, 'pipinstall.py')
-    os.system(f'python3 {FILE} {sys.argv[2]}')
-
-
 @cli.command(help='run install')
 def install():
     FILE = join(ROOT, 'scripts', 'install.sh')

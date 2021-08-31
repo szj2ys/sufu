@@ -91,6 +91,7 @@ setup(
     entry_points={
         "console_scripts": [
             "sufu=sufu.cli:execute",
+            "pipi=sufu.pipinstall:main",
         ],
     },
     license="MIT",  # BSD
